@@ -1,0 +1,194 @@
+[
+  {
+    "type": "includeStatment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "table",
+          "named": true
+        },
+        {
+          "type": "timeFrame",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "listStatment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "query",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "statment",
+          "named": true
+        },
+        {
+          "type": "table",
+          "named": true
+        },
+        {
+          "type": "timeFrame",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sortStatment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "query",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "statment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "includeStatment",
+          "named": true
+        },
+        {
+          "type": "listStatment",
+          "named": true
+        },
+        {
+          "type": "sortStatment",
+          "named": true
+        },
+        {
+          "type": "statmentStep",
+          "named": true
+        },
+        {
+          "type": "summarizeStatment",
+          "named": true
+        },
+        {
+          "type": "whereStatment",
+          "named": true
+        },
+        {
+          "type": "withStatment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "summarizeStatment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "table",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "time",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "timeFrame",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "time",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "whereStatment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "withStatment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "table",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "during past",
+    "named": false
+  },
+  {
+    "type": "include",
+    "named": false
+  },
+  {
+    "type": "list",
+    "named": false
+  },
+  {
+    "type": "sort",
+    "named": false
+  },
+  {
+    "type": "statmentStep",
+    "named": true
+  },
+  {
+    "type": "summarize",
+    "named": false
+  },
+  {
+    "type": "where",
+    "named": false
+  },
+  {
+    "type": "with",
+    "named": false
+  }
+]

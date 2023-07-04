@@ -1,0 +1,32 @@
+==================
+string
+==================
+
+devices
+
+| where
+  field == "a"
+
+| where
+  field == 'a'
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))))

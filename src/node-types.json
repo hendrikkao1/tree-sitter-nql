@@ -1,6 +1,357 @@
 [
   {
-    "type": "includeStatment",
+    "type": "aggregate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "aggregate_field",
+          "named": true
+        },
+        {
+          "type": "aggregate_function",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "aggregate_field",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "avg",
+          "named": true
+        },
+        {
+          "type": "count",
+          "named": true
+        },
+        {
+          "type": "last",
+          "named": true
+        },
+        {
+          "type": "max",
+          "named": true
+        },
+        {
+          "type": "min",
+          "named": true
+        },
+        {
+          "type": "sum",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "aggregate_function",
+    "named": true,
+    "fields": {
+      "aggregate_function_call": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "()",
+            "named": false
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "aggregate_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "alias",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "byte",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compute_clause",
+          "named": true
+        },
+        {
+          "type": "include_clause",
+          "named": true
+        },
+        {
+          "type": "limit_clause",
+          "named": true
+        },
+        {
+          "type": "list_clause",
+          "named": true
+        },
+        {
+          "type": "pipe",
+          "named": true
+        },
+        {
+          "type": "sort_clause",
+          "named": true
+        },
+        {
+          "type": "summarize_clause",
+          "named": true
+        },
+        {
+          "type": "where_clause",
+          "named": true
+        },
+        {
+          "type": "with_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compute_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alias",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "field_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "date",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "date_time",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "duration",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "enum",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "equals",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "aggregate_function",
+          "named": true
+        },
+        {
+          "type": "expression_addition",
+          "named": true
+        },
+        {
+          "type": "expression_division",
+          "named": true
+        },
+        {
+          "type": "expression_multiplication",
+          "named": true
+        },
+        {
+          "type": "expression_parenthesized_expression",
+          "named": true
+        },
+        {
+          "type": "expression_subtraction",
+          "named": true
+        },
+        {
+          "type": "field",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_addition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "addition",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_division",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "division",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_multiplication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "multiplication",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_parenthesized_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_subtraction",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "subtraction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "field",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "aggregate",
+          "named": true
+        },
+        {
+          "type": "field_name",
+          "named": true
+        },
+        {
+          "type": "field_property",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include_clause",
     "named": true,
     "fields": {},
     "children": {
@@ -12,14 +363,54 @@
           "named": true
         },
         {
-          "type": "timeFrame",
+          "type": "time_frame",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "listStatment",
+    "type": "int",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ip_address",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "limit_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "min",
     "named": true,
     "fields": {}
   },
@@ -32,22 +423,56 @@
       "required": true,
       "types": [
         {
-          "type": "statment",
+          "type": "clause",
           "named": true
         },
         {
-          "type": "table",
-          "named": true
-        },
-        {
-          "type": "timeFrame",
+          "type": "select_clause",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "sortStatment",
+    "type": "select_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "table",
+          "named": true
+        },
+        {
+          "type": "time_frame",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sort_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "field",
+          "named": true
+        },
+        {
+          "type": "sort_order",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sort_order",
     "named": true,
     "fields": {}
   },
@@ -67,7 +492,12 @@
     }
   },
   {
-    "type": "statment",
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "summarize_clause",
     "named": true,
     "fields": {},
     "children": {
@@ -75,40 +505,31 @@
       "required": true,
       "types": [
         {
-          "type": "includeStatment",
+          "type": "alias",
           "named": true
         },
         {
-          "type": "listStatment",
+          "type": "by",
           "named": true
         },
         {
-          "type": "sortStatment",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "statmentStep",
+          "type": "expression",
           "named": true
         },
         {
-          "type": "summarizeStatment",
+          "type": "field",
           "named": true
         },
         {
-          "type": "whereStatment",
-          "named": true
-        },
-        {
-          "type": "withStatment",
+          "type": "field_name",
           "named": true
         }
       ]
     }
-  },
-  {
-    "type": "summarizeStatment",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "table",
@@ -116,55 +537,300 @@
     "fields": {}
   },
   {
-    "type": "time",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "timeFrame",
+    "type": "time_frame",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
-          "type": "time",
+          "type": "date",
+          "named": true
+        },
+        {
+          "type": "date_time",
+          "named": true
+        },
+        {
+          "type": "duration",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "whereStatment",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "withStatment",
+    "type": "where_clause",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "byte",
+          "named": true
+        },
+        {
+          "type": "enum",
+          "named": true
+        },
+        {
+          "type": "equals",
+          "named": true
+        },
+        {
+          "type": "field",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "greater_than",
+          "named": true
+        },
+        {
+          "type": "greater_than_or_equals",
+          "named": true
+        },
+        {
+          "type": "in_array",
+          "named": true
+        },
+        {
+          "type": "int",
+          "named": true
+        },
+        {
+          "type": "ip_address",
+          "named": true
+        },
+        {
+          "type": "less_than",
+          "named": true
+        },
+        {
+          "type": "less_than_or_equals",
+          "named": true
+        },
+        {
+          "type": "not_equals",
+          "named": true
+        },
+        {
+          "type": "not_in_array",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "version",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "with_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
       "required": true,
       "types": [
         {
           "type": "table",
           "named": true
+        },
+        {
+          "type": "time_frame",
+          "named": true
         }
       ]
     }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": "()",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
   },
   {
     "type": ".",
     "named": false
   },
   {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": "B",
+    "named": false
+  },
+  {
+    "type": "GB",
+    "named": false
+  },
+  {
+    "type": "KB",
+    "named": false
+  },
+  {
+    "type": "MB",
+    "named": false
+  },
+  {
+    "type": "TB",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "addition",
+    "named": true
+  },
+  {
+    "type": "and",
+    "named": true
+  },
+  {
+    "type": "asc",
+    "named": false
+  },
+  {
+    "type": "avg",
+    "named": true
+  },
+  {
+    "type": "by",
+    "named": true
+  },
+  {
+    "type": "compute",
+    "named": false
+  },
+  {
+    "type": "count",
+    "named": true
+  },
+  {
+    "type": "d",
+    "named": false
+  },
+  {
+    "type": "desc",
+    "named": false
+  },
+  {
+    "type": "division",
+    "named": true
+  },
+  {
     "type": "during past",
     "named": false
   },
   {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "field_name",
+    "named": true
+  },
+  {
+    "type": "field_property",
+    "named": true
+  },
+  {
+    "type": "float",
+    "named": true
+  },
+  {
+    "type": "from",
+    "named": false
+  },
+  {
+    "type": "greater_than",
+    "named": true
+  },
+  {
+    "type": "greater_than_or_equals",
+    "named": true
+  },
+  {
+    "type": "h",
+    "named": false
+  },
+  {
+    "type": "in_array",
+    "named": true
+  },
+  {
     "type": "include",
+    "named": false
+  },
+  {
+    "type": "last",
+    "named": true
+  },
+  {
+    "type": "less_than",
+    "named": true
+  },
+  {
+    "type": "less_than_or_equals",
+    "named": true
+  },
+  {
+    "type": "limit",
     "named": false
   },
   {
@@ -172,16 +838,72 @@
     "named": false
   },
   {
+    "type": "max",
+    "named": true
+  },
+  {
+    "type": "min",
+    "named": false
+  },
+  {
+    "type": "ms",
+    "named": false
+  },
+  {
+    "type": "multiplication",
+    "named": true
+  },
+  {
+    "type": "not_equals",
+    "named": true
+  },
+  {
+    "type": "not_in_array",
+    "named": true
+  },
+  {
+    "type": "on",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": true
+  },
+  {
+    "type": "pipe",
+    "named": true
+  },
+  {
+    "type": "s",
+    "named": false
+  },
+  {
     "type": "sort",
     "named": false
   },
   {
-    "type": "statmentStep",
+    "type": "subtraction",
+    "named": true
+  },
+  {
+    "type": "sum",
     "named": true
   },
   {
     "type": "summarize",
     "named": false
+  },
+  {
+    "type": "to",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "version",
+    "named": true
   },
   {
     "type": "where",

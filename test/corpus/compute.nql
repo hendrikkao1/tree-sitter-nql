@@ -1,0 +1,49 @@
+==================
+compute
+==================
+
+devices
+
+| compute
+  total_errors_device = number_of_errors.sum(),
+  usage_hours = (duration.sum() / 3600) * 1
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (compute_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (sum))))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_multiplication
+                (expression
+                  (expression_parenthesized_expression
+                    (expression
+                      (expression_division
+                        (expression
+                          (field
+                            (field_name)
+                            (aggregate
+                              (aggregate_function
+                                (aggregate_field
+                                  (sum))))))
+                        (division)
+                        (expression
+                          (int))))))
+                (multiplication)
+                (expression
+                  (int))))))))

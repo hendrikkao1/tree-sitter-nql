@@ -1,0 +1,22 @@
+==================
+sort
+==================
+
+devices
+
+| sort
+  username
+  asc
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (sort_clause
+            (field
+              (field_name))
+            (sort_order)))))

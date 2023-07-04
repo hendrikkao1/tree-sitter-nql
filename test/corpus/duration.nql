@@ -1,0 +1,82 @@
+==================
+duration
+==================
+
+devices
+
+| summarize
+  c1 = field 
+  by 5ms
+
+| summarize
+  c2 = field  
+  by 10s
+
+| summarize
+  c3 = field  
+  by 4min
+
+| summarize
+  c4 = field  
+  by 3h
+
+| summarize
+  c5 = field  
+  by 2d
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)))
+            (by)
+            (duration)))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)))
+            (by)
+            (duration)))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)))
+            (by)
+            (duration)))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)))
+            (by)
+            (duration)))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)))
+            (by)
+            (duration)))))

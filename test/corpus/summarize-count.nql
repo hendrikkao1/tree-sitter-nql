@@ -1,0 +1,24 @@
+==================
+summarize count
+==================
+
+devices
+
+| summarize
+  number_of_devices = count()
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (aggregate_function
+                (aggregate_field
+                  (count))))))))

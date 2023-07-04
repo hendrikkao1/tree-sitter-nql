@@ -1,0 +1,55 @@
+==================
+logical operators
+==================
+
+devices
+
+| where
+  field in ["ABC", "def"] 
+| where 
+  field in [10, 20, 30]
+| where 
+  field !in ["ABC", "def"]
+| where 
+  field !in [10, 20, 30]
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (in_array)
+            (string)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (in_array)
+            (int)
+            (int)
+            (int)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_in_array)
+            (string)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_in_array)
+            (int)
+            (int)
+            (int)))))

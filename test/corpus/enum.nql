@@ -1,0 +1,22 @@
+==================
+enum
+==================
+
+devices
+
+| where
+  field == red
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (enum)))))

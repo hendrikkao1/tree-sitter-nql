@@ -1,0 +1,27 @@
+==================
+summarize sum
+==================
+
+devices
+
+| summarize
+  total_size = size.sum()
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (sum))))))))))

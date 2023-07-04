@@ -1,0 +1,18 @@
+==================
+limit
+==================
+
+devices
+
+| limit 15
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (limit_clause
+            (int)))))

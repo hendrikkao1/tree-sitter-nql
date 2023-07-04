@@ -1,0 +1,100 @@
+==================
+arithmetic operators
+==================
+
+devices
+
+| compute
+  c1 = column_name.sum() + 10,
+  c2 = count() - 10,
+  c3 = count() / 10,
+  c4 = count() * 0.1,
+  c5 = (sum() / count()) / 100,
+  c6 = field * 0.1
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (compute_clause
+            (field_name)
+            (alias)
+            (expression
+              (expression_addition
+                (expression
+                  (field
+                    (field_name)
+                    (aggregate
+                      (aggregate_function
+                        (aggregate_field
+                          (sum))))))
+                (addition)
+                (expression
+                  (int))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_subtraction
+                (expression
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))
+                (subtraction)
+                (expression
+                  (int))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_division
+                (expression
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))
+                (division)
+                (expression
+                  (int))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_multiplication
+                (expression
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))
+                (multiplication)
+                (expression
+                  (float))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_division
+                (expression
+                  (expression_parenthesized_expression
+                    (expression
+                      (expression_division
+                        (expression
+                          (aggregate_function
+                            (aggregate_field
+                              (sum))))
+                        (division)
+                        (expression
+                          (aggregate_function
+                            (aggregate_field
+                              (count))))))))
+                (division)
+                (expression
+                  (int))))
+            (field_name)
+            (alias)
+            (expression
+              (expression_multiplication
+                (expression
+                  (field
+                    (field_name)))
+                (multiplication)
+                (expression
+                  (float))))))))

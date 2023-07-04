@@ -1,0 +1,15 @@
+==================
+during past
+==================
+
+devices
+  during past 45min
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table)
+          (time_frame
+            (duration)))))

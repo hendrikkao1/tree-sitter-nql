@@ -1,0 +1,56 @@
+==================
+ip address
+==================
+
+devices
+
+devices
+
+| where
+  field == 123.123.0.0
+
+| where
+  field == 123.123.0.0/24
+
+| where
+  field == f164:b28c:84a5:9dd3:ef21:8c9d:d3ef:218c
+
+| where
+  field == f164:b28c:84a5:9dd3::/32
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (ERROR
+          (UNEXPECTED 'v'))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (ip_address)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (ip_address)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (ip_address)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (ip_address)))))

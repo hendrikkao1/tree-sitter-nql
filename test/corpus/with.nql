@@ -1,0 +1,22 @@
+==================
+with
+==================
+
+devices
+
+| with
+  web.errors
+  during past 7d
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (with_clause
+            (table)
+            (time_frame
+              (duration))))))

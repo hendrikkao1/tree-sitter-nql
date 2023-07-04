@@ -1,0 +1,54 @@
+==================
+summarize
+==================
+
+devices
+
+| summarize
+  usage_hours = (duration.sum() / 3600) * duration.avg(),
+  average_num_navigation_per_device = num_navigations.avg()
+
+---
+
+    (source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (expression_multiplication
+                (expression
+                  (expression_parenthesized_expression
+                    (expression
+                      (expression_division
+                        (expression
+                          (field
+                            (field_name)
+                            (aggregate
+                              (aggregate_function
+                                (aggregate_field
+                                  (sum))))))
+                        (division)
+                        (expression
+                          (int))))))
+                (multiplication)
+                (expression
+                  (field
+                    (field_name)
+                    (aggregate
+                      (aggregate_function
+                        (aggregate_field
+                          (avg))))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (avg))))))))))

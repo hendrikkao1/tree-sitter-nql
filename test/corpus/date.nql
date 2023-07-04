@@ -1,0 +1,32 @@
+==================
+date
+==================
+
+devices
+
+| with
+  devices
+  on Jan 23, 2021
+
+| with
+  devices
+  on Apr 24
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (with_clause
+            (table)
+            (time_frame
+              (date))))
+        (clause
+          (pipe)
+          (with_clause
+            (table)
+            (time_frame
+              (date))))))

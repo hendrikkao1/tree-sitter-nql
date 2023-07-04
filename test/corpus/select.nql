@@ -1,0 +1,12 @@
+==================
+select
+==================
+
+devices
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))))

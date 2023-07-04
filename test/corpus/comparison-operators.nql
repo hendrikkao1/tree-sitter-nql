@@ -1,0 +1,131 @@
+==================
+comparison operators
+==================
+
+devices
+
+| where
+  field == "abc" 
+
+| where 
+  field = "ABC" 
+
+| where 
+  field == "abc*" 
+
+| where 
+  field == "a?c"
+| where
+  field != "abc" 
+
+| where 
+  field != "ABC" 
+
+| where 
+  field != "abc*" 
+
+| where 
+  field != "a?c"
+
+| where
+  field > 10
+
+| where
+  field >= 10
+
+| where
+  field < 10
+
+| where
+  field <= 10
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (not_equals)
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (greater_than)
+            (int)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (greater_than_or_equals)
+            (int)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (less_than)
+            (int)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (less_than_or_equals)
+            (int)))))

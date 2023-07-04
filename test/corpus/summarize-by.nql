@@ -1,0 +1,34 @@
+==================
+summarize by
+==================
+
+devices
+
+| summarize
+  backendTime = page_load_time.backend.avg()
+  by
+  device.name
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (field_property)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (avg))))))
+            (by)
+            (field
+              (field_name)
+              (field_property))))))

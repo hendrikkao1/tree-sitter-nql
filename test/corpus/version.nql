@@ -1,0 +1,72 @@
+==================
+version
+==================
+
+devices
+
+| where
+  field == v12.212
+
+| where
+  field == v1.2.5.9
+
+| where
+  field == v13.5.10
+
+| where
+  field == v2022.6
+
+| where
+  field == v1.2.4125
+
+| where
+  field == v6.8.9.7.6.5.4.3
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (version)))))

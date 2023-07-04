@@ -1,0 +1,32 @@
+==================
+boolean
+==================
+
+devices
+
+| where
+  field == true
+
+| where
+  field == false
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (boolean)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (boolean)))))

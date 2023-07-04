@@ -1,0 +1,33 @@
+==================
+include
+==================
+
+devices
+
+| include
+  execution.crashes
+  during past 24h
+
+| include
+  web.page_views
+  from 2023-06-24 06:00:00 to 2023-07-06 12:00:00
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (include_clause
+            (table)
+            (time_frame
+              (duration))))
+        (clause
+          (pipe)
+          (include_clause
+            (table)
+            (time_frame
+              (date_time)
+              (date_time))))))

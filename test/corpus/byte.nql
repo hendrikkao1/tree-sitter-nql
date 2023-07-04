@@ -1,0 +1,62 @@
+==================
+byte
+==================
+
+devices
+
+| where
+  field == 100B
+
+| where
+  field == 200KB
+
+| where
+  field == 3MB
+
+| where
+  field == 12GB
+
+| where
+  field == 2TB
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (byte)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (byte)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (byte)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (byte)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (byte)))))

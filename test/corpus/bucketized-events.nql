@@ -1,0 +1,15 @@
+==================
+bucketized events
+==================
+
+web.page_views 
+  during past 7d
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table)
+          (time_frame
+            (duration)))))

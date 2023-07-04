@@ -1,0 +1,111 @@
+==================
+aggregates
+==================
+
+devices
+
+| summarize 
+  c1 = count(),
+  c2 = field.count(), 
+  c3 = field.count, 
+  c4 = field.avg(), 
+  c5 = field.avg, 
+  c6 = field.sum(), 
+  c7 = field.sum, 
+  c8 = field.max(), 
+  c9 = field.min(),
+  c10 = field.last()
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (aggregate_function
+                (aggregate_field
+                  (count))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_field
+                    (count)))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (avg))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_field
+                    (avg)))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (sum))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_field
+                    (sum)))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (max))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (min))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (last))))))))))

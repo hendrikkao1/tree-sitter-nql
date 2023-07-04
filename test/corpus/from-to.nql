@@ -1,0 +1,16 @@
+==================
+from to
+==================
+
+devices
+  from Jun 1, 2023 to Jun 15, 2023
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table)
+          (time_frame
+            (date)
+            (date)))))

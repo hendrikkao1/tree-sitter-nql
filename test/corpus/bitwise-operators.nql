@@ -1,0 +1,36 @@
+==================
+bitwise operators
+==================
+
+devices
+
+| where
+  field == "a" 
+  and 
+  field == "b"
+  or 
+  field == "c"
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (string)
+            (and)
+            (field
+              (field_name))
+            (equals)
+            (string)
+            (or)
+            (field
+              (field_name))
+            (equals)
+            (string)))))

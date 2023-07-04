@@ -1,0 +1,38 @@
+==================
+count
+==================
+
+devices
+
+| compute
+  number_of_applications = binary.name.count(),
+  number_of_binaries = binary.count()
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (compute_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (field_property)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))))
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (aggregate
+                  (aggregate_function
+                    (aggregate_field
+                      (count))))))))))

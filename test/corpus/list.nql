@@ -1,0 +1,28 @@
+==================
+list
+==================
+
+devices
+
+| list
+  device.operating_system.platform,
+  username,
+  type
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (list_clause
+            (field
+              (field_name)
+              (field_property)
+              (field_property))
+            (field
+              (field_name))
+            (field
+              (field_name))))))

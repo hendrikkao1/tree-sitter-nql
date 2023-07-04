@@ -1,0 +1,22 @@
+==================
+int
+==================
+
+devices
+
+| where
+  field == 10
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (equals)
+            (int)))))

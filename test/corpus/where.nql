@@ -1,0 +1,35 @@
+==================
+where
+==================
+
+devices
+
+| where
+  operating_system.platform == Windows
+
+| where
+  web.page_view.url == "https://www.example.com"
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name)
+              (field_property))
+            (equals)
+            (enum)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name)
+              (field_property)
+              (field_property))
+            (equals)
+            (string)))))

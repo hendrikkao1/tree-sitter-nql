@@ -78,7 +78,8 @@ module.exports = grammar({
         $.byte,
         $.ip_address,
         $.version,
-        $.enum
+        $.enum,
+        $.duration
       );
 
       const comparison = seq(

@@ -580,6 +580,10 @@
           "named": true
         },
         {
+          "type": "duration",
+          "named": true
+        },
+        {
           "type": "enum",
           "named": true
         },

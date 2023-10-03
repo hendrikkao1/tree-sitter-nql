@@ -482,6 +482,10 @@
                                   {
                                     "type": "SYMBOL",
                                     "name": "enum"
+                                  },
+                                  {
+                                    "type": "SYMBOL",
+                                    "name": "duration"
                                   }
                                 ]
                               },
@@ -531,6 +535,10 @@
                                             {
                                               "type": "SYMBOL",
                                               "name": "enum"
+                                            },
+                                            {
+                                              "type": "SYMBOL",
+                                              "name": "duration"
                                             }
                                           ]
                                         },
@@ -575,6 +583,10 @@
                                       {
                                         "type": "SYMBOL",
                                         "name": "enum"
+                                      },
+                                      {
+                                        "type": "SYMBOL",
+                                        "name": "duration"
                                       }
                                     ]
                                   },
@@ -685,6 +697,10 @@
                             {
                               "type": "SYMBOL",
                               "name": "enum"
+                            },
+                            {
+                              "type": "SYMBOL",
+                              "name": "duration"
                             }
                           ]
                         },
@@ -734,6 +750,10 @@
                                       {
                                         "type": "SYMBOL",
                                         "name": "enum"
+                                      },
+                                      {
+                                        "type": "SYMBOL",
+                                        "name": "duration"
                                       }
                                     ]
                                   },
@@ -778,6 +798,10 @@
                                 {
                                   "type": "SYMBOL",
                                   "name": "enum"
+                                },
+                                {
+                                  "type": "SYMBOL",
+                                  "name": "duration"
                                 }
                               ]
                             },
@@ -889,6 +913,10 @@
                                       {
                                         "type": "SYMBOL",
                                         "name": "enum"
+                                      },
+                                      {
+                                        "type": "SYMBOL",
+                                        "name": "duration"
                                       }
                                     ]
                                   },
@@ -938,6 +966,10 @@
                                                 {
                                                   "type": "SYMBOL",
                                                   "name": "enum"
+                                                },
+                                                {
+                                                  "type": "SYMBOL",
+                                                  "name": "duration"
                                                 }
                                               ]
                                             },
@@ -982,6 +1014,10 @@
                                           {
                                             "type": "SYMBOL",
                                             "name": "enum"
+                                          },
+                                          {
+                                            "type": "SYMBOL",
+                                            "name": "duration"
                                           }
                                         ]
                                       },
@@ -1092,6 +1128,10 @@
                                 {
                                   "type": "SYMBOL",
                                   "name": "enum"
+                                },
+                                {
+                                  "type": "SYMBOL",
+                                  "name": "duration"
                                 }
                               ]
                             },
@@ -1141,6 +1181,10 @@
                                           {
                                             "type": "SYMBOL",
                                             "name": "enum"
+                                          },
+                                          {
+                                            "type": "SYMBOL",
+                                            "name": "duration"
                                           }
                                         ]
                                       },
@@ -1185,6 +1229,10 @@
                                     {
                                       "type": "SYMBOL",
                                       "name": "enum"
+                                    },
+                                    {
+                                      "type": "SYMBOL",
+                                      "name": "duration"
                                     }
                                   ]
                                 },

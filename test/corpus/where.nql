@@ -10,6 +10,9 @@ devices
 | where
   web.page_view.url == "https://www.example.com"
 
+| where
+  time_until_desktop_is_visible >= 60s
+
 ---
 
 (source_file
@@ -32,4 +35,11 @@ devices
               (field_property)
               (field_property))
             (equals)
-            (string)))))
+            (string)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (greater_than_or_equals)
+            (duration)))))

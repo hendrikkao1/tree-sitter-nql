@@ -6,7 +6,7 @@ module.exports = grammar({
 
     query: ($) => seq($.select_clause, optional(repeat($.clause))),
 
-    table: ($) => seq(/[A-z\.]+/),
+    table: ($) => seq(/[#A-z\.]+/),
 
     clause: ($) =>
       seq(

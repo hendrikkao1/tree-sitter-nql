@@ -12,6 +12,9 @@ devices
   web.page_views
   from 2023-06-24 06:00:00 to 2023-07-06 12:00:00
 
+| include
+  campaign.#dex_campaign_name.responses
+
 ---
 
 (source_file
@@ -30,4 +33,8 @@ devices
             (table)
             (time_frame
               (date_time)
-              (date_time))))))
+              (date_time))))
+        (clause
+          (pipe)
+          (include_clause
+            (table)))))

@@ -34,7 +34,7 @@
       "members": [
         {
           "type": "PATTERN",
-          "value": "[A-z\\.]+"
+          "value": "[#A-z\\.]+"
         }
       ]
     },

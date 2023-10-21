@@ -180,11 +180,6 @@
     "fields": {}
   },
   {
-    "type": "enum",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "equals",
     "named": true,
     "fields": {}
@@ -780,6 +775,10 @@
   {
     "type": "during past",
     "named": false
+  },
+  {
+    "type": "enum",
+    "named": true
   },
   {
     "type": "false",

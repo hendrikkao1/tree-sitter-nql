@@ -1767,7 +1767,7 @@
     },
     "enum": {
       "type": "PATTERN",
-      "value": "[A-z\\.]+"
+      "value": "[a-zA-Z_]+"
     },
     "byte": {
       "type": "SEQ",

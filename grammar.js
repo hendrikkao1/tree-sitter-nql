@@ -218,7 +218,8 @@ module.exports = grammar({
     // Red
     // Blue
     // White
-    enum: ($) => /[A-z\.]+/,
+    // For some reason we cant have /[A-z]+/ here?
+    enum: ($) => /[a-zA-Z_]+/,
 
     // 100B
     // 200KB

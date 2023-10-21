@@ -7,6 +7,9 @@ devices
 | where
   field == red
 
+| where
+  state in [enum, ENUM, Enum, en_uM]
+
 ---
 
 (source_file
@@ -19,4 +22,14 @@ devices
             (field
               (field_name))
             (equals)
+            (enum)))
+        (clause
+          (pipe)
+          (where_clause
+            (field
+              (field_name))
+            (in_array)
+            (enum)
+            (enum)
+            (enum)
             (enum)))))

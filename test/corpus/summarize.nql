@@ -10,7 +10,7 @@ devices
 
 ---
 
-    (source_file
+(source_file
       (query
         (select_clause
           (table))
@@ -30,8 +30,7 @@ devices
                             (field_name)
                             (aggregate
                               (aggregate_function
-                                (aggregate_field
-                                  (sum))))))
+                                (sum)))))
                         (division)
                         (expression
                           (int))))))
@@ -41,8 +40,7 @@ devices
                     (field_name)
                     (aggregate
                       (aggregate_function
-                        (aggregate_field
-                          (avg))))))))
+                        (avg)))))))
             (field_name)
             (alias)
             (expression
@@ -50,5 +48,4 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (avg))))))))))
+                    (avg)))))))))

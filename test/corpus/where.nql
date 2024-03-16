@@ -22,24 +22,27 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name)
-              (field_property))
-            (equals)
-            (enum)))
+            (comparison
+              (field
+                (field_name)
+                (field_property))
+              (equals)
+              (enum))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name)
-              (field_property)
-              (field_property))
-            (equals)
-            (string)))
+            (comparison
+              (field
+                (field_name)
+                (field_property)
+                (field_property))
+              (equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (greater_than_or_equals)
-            (duration)))))
+            (comparison
+              (field
+                (field_name))
+              (greater_than_or_equals)
+              (duration))))))

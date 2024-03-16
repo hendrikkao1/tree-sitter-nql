@@ -1,0 +1,46 @@
+==================
+summarize count if
+==================
+
+collaboration.sessions during past 24h
+| summarize ratio_of_poor_calls = countif(session.audio.quality = poor or session.video.quality = poor) / count() by connection_type
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table)
+          (time_frame
+            (duration)))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (expression_division
+                (expression
+                  (aggregate_function
+                    (count_if)
+                    (comparison
+                      (field
+                        (field_name)
+                        (field_property)
+                        (field_property))
+                      (equals)
+                      (enum)
+                      (or)
+                      (field
+                        (field_name)
+                        (field_property)
+                        (field_property))
+                      (equals)
+                      (enum))))
+                (division)
+                (expression
+                  (aggregate_function
+                    (count)))))
+            (by)
+            (field
+              (field_name))))))

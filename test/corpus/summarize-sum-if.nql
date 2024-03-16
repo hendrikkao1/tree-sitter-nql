@@ -1,0 +1,62 @@
+==================
+summarize sum if
+==================
+
+devices during past 24h
+| include web.page_views during past 24h
+| where application.name == "Confluence"
+| compute total_cnt = page_view.number_of_page_views.sumif(page_view.experience_level == frustrating)
+| sort total_cnt desc
+| limit 10
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table)
+          (time_frame
+            (duration)))
+        (clause
+          (pipe)
+          (include_clause
+            (table)
+            (time_frame
+              (duration))))
+        (clause
+          (pipe)
+          (where_clause
+            (comparison
+              (field
+                (field_name)
+                (field_property))
+              (equals)
+              (string))))
+        (clause
+          (pipe)
+          (compute_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (field_property)
+                (aggregate
+                  (aggregate_function
+                    (sum_if)
+                    (comparison
+                      (field
+                        (field_name)
+                        (field_property))
+                      (equals)
+                      (enum))))))))
+        (clause
+          (pipe)
+          (sort_clause
+            (field
+              (field_name))
+            (sort_order)))
+        (clause
+          (pipe)
+          (limit_clause
+            (int)))))

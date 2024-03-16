@@ -19,17 +19,19 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (enum)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (enum))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (in_array)
-            (enum)
-            (enum)
-            (enum)
-            (enum)))))
+            (comparison
+              (field
+                (field_name))
+              (in_array)
+              (enum)
+              (enum)
+              (enum)
+              (enum))))))

@@ -24,8 +24,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (sum))))))
+                    (sum)))))
             (field_name)
             (alias)
             (expression
@@ -39,8 +38,7 @@ devices
                             (field_name)
                             (aggregate
                               (aggregate_function
-                                (aggregate_field
-                                  (sum))))))
+                                (sum)))))
                         (division)
                         (expression
                           (int))))))

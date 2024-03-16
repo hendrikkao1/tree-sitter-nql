@@ -20,17 +20,18 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (string)
-            (and)
-            (field
-              (field_name))
-            (equals)
-            (string)
-            (or)
-            (field
-              (field_name))
-            (equals)
-            (string)))))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (string)
+              (and)
+              (field
+                (field_name))
+              (equals)
+              (string)
+              (or)
+              (field
+                (field_name))
+              (equals)
+              (string))))))

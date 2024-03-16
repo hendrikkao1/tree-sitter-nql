@@ -4,8 +4,6 @@ ip address
 
 devices
 
-devices
-
 | where
   field == 123.123.0.0
 
@@ -24,33 +22,35 @@ devices
       (query
         (select_clause
           (table))
-        (ERROR
-          (UNEXPECTED 'v'))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (ip_address)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (ip_address))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (ip_address)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (ip_address))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (ip_address)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (ip_address))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (ip_address)))))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (ip_address))))))

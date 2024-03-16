@@ -48,84 +48,96 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (not_equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (not_equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (not_equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_equals)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (not_equals)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (greater_than)
-            (int)))
+            (comparison
+              (field
+                (field_name))
+              (greater_than)
+              (int))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (greater_than_or_equals)
-            (int)))
+            (comparison
+              (field
+                (field_name))
+              (greater_than_or_equals)
+              (int))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (less_than)
-            (int)))
+            (comparison
+              (field
+                (field_name))
+              (less_than)
+              (int))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (less_than_or_equals)
-            (int)))))
+            (comparison
+              (field
+                (field_name))
+              (less_than_or_equals)
+              (int))))))

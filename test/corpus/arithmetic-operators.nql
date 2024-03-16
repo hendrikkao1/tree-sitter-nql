@@ -30,8 +30,7 @@ devices
                     (field_name)
                     (aggregate
                       (aggregate_function
-                        (aggregate_field
-                          (sum))))))
+                        (sum)))))
                 (addition)
                 (expression
                   (int))))
@@ -41,8 +40,7 @@ devices
               (expression_subtraction
                 (expression
                   (aggregate_function
-                    (aggregate_field
-                      (count))))
+                    (count)))
                 (subtraction)
                 (expression
                   (int))))
@@ -52,8 +50,7 @@ devices
               (expression_division
                 (expression
                   (aggregate_function
-                    (aggregate_field
-                      (count))))
+                    (count)))
                 (division)
                 (expression
                   (int))))
@@ -63,8 +60,7 @@ devices
               (expression_multiplication
                 (expression
                   (aggregate_function
-                    (aggregate_field
-                      (count))))
+                    (count)))
                 (multiplication)
                 (expression
                   (float))))
@@ -78,13 +74,11 @@ devices
                       (expression_division
                         (expression
                           (aggregate_function
-                            (aggregate_field
-                              (sum))))
+                            (sum)))
                         (division)
                         (expression
                           (aggregate_function
-                            (aggregate_field
-                              (count))))))))
+                            (count)))))))
                 (division)
                 (expression
                   (int))))

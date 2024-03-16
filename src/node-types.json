@@ -35,6 +35,37 @@
           "named": true
         },
         {
+          "type": "sum",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "aggregate_function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "avg",
+          "named": true
+        },
+        {
+          "type": "comparison",
+          "named": true
+        },
+        {
+          "type": "count",
+          "named": true
+        },
+        {
+          "type": "count_if",
+          "named": true
+        },
+        {
           "type": "last",
           "named": true
         },
@@ -49,31 +80,9 @@
         {
           "type": "sum",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "aggregate_function",
-    "named": true,
-    "fields": {
-      "aggregate_function_call": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "()",
-            "named": false
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "aggregate_field",
+          "type": "sum_if",
           "named": true
         }
       ]
@@ -136,6 +145,97 @@
         },
         {
           "type": "with_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comparison",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "byte",
+          "named": true
+        },
+        {
+          "type": "duration",
+          "named": true
+        },
+        {
+          "type": "enum",
+          "named": true
+        },
+        {
+          "type": "equals",
+          "named": true
+        },
+        {
+          "type": "field",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "greater_than",
+          "named": true
+        },
+        {
+          "type": "greater_than_or_equals",
+          "named": true
+        },
+        {
+          "type": "in_array",
+          "named": true
+        },
+        {
+          "type": "int",
+          "named": true
+        },
+        {
+          "type": "ip_address",
+          "named": true
+        },
+        {
+          "type": "less_than",
+          "named": true
+        },
+        {
+          "type": "less_than_or_equals",
+          "named": true
+        },
+        {
+          "type": "not_equals",
+          "named": true
+        },
+        {
+          "type": "not_in_array",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "version",
           "named": true
         }
       ]
@@ -559,87 +659,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "boolean",
-          "named": true
-        },
-        {
-          "type": "byte",
-          "named": true
-        },
-        {
-          "type": "duration",
-          "named": true
-        },
-        {
-          "type": "enum",
-          "named": true
-        },
-        {
-          "type": "equals",
-          "named": true
-        },
-        {
-          "type": "field",
-          "named": true
-        },
-        {
-          "type": "float",
-          "named": true
-        },
-        {
-          "type": "greater_than",
-          "named": true
-        },
-        {
-          "type": "greater_than_or_equals",
-          "named": true
-        },
-        {
-          "type": "in_array",
-          "named": true
-        },
-        {
-          "type": "int",
-          "named": true
-        },
-        {
-          "type": "ip_address",
-          "named": true
-        },
-        {
-          "type": "less_than",
-          "named": true
-        },
-        {
-          "type": "less_than_or_equals",
-          "named": true
-        },
-        {
-          "type": "not_equals",
-          "named": true
-        },
-        {
-          "type": "not_in_array",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "version",
+          "type": "comparison",
           "named": true
         }
       ]
@@ -674,10 +698,6 @@
   },
   {
     "type": "(",
-    "named": false
-  },
-  {
-    "type": "()",
     "named": false
   },
   {
@@ -758,6 +778,10 @@
   },
   {
     "type": "count",
+    "named": true
+  },
+  {
+    "type": "count_if",
     "named": true
   },
   {
@@ -890,6 +914,10 @@
   },
   {
     "type": "sum",
+    "named": true
+  },
+  {
+    "type": "sum_if",
     "named": true
   },
   {

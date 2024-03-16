@@ -29,8 +29,7 @@ devices
             (alias)
             (expression
               (aggregate_function
-                (aggregate_field
-                  (count))))
+                (count)))
             (field_name)
             (alias)
             (expression
@@ -38,8 +37,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (count))))))
+                    (count)))))
             (field_name)
             (alias)
             (expression
@@ -55,8 +53,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (avg))))))
+                    (avg)))))
             (field_name)
             (alias)
             (expression
@@ -72,8 +69,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (sum))))))
+                    (sum)))))
             (field_name)
             (alias)
             (expression
@@ -89,8 +85,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (max))))))
+                    (max)))))
             (field_name)
             (alias)
             (expression
@@ -98,8 +93,7 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (min))))))
+                    (min)))))
             (field_name)
             (alias)
             (expression
@@ -107,5 +101,4 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (last))))))))))
+                    (last)))))))))

@@ -22,34 +22,38 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (in_array)
-            (string)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (in_array)
+              (string)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (in_array)
-            (int)
-            (int)
-            (int)))
+            (comparison
+              (field
+                (field_name))
+              (in_array)
+              (int)
+              (int)
+              (int))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_in_array)
-            (string)
-            (string)))
+            (comparison
+              (field
+                (field_name))
+              (not_in_array)
+              (string)
+              (string))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (not_in_array)
-            (int)
-            (int)
-            (int)))))
+            (comparison
+              (field
+                (field_name))
+              (not_in_array)
+              (int)
+              (int)
+              (int))))))

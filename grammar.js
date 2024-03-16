@@ -56,7 +56,10 @@ module.exports = grammar({
         optional(repeat(seq(",", $.field_name, $.alias, $.expression)))
       ),
 
-    where_clause: ($) => {
+    where_clause: ($) =>
+      seq("where", choice($.comparison, seq("(", $.comparison, ")"))),
+
+    comparison: ($) => {
       const left = $.field;
 
       const operators = choice(
@@ -93,10 +96,7 @@ module.exports = grammar({
         comparison
       );
 
-      return seq(
-        "where",
-        choice(joined_comparison, seq("(", joined_comparison, ")"))
-      );
+      return joined_comparison;
     },
 
     with_clause: ($) => seq("with", $.table, optional($.time_frame)),
@@ -306,11 +306,13 @@ module.exports = grammar({
     // Aggregates
     // https://docs.nexthink.com/platform/latest/nql-aggregates
 
-    count: () => "count",
-
     avg: () => "avg",
 
     sum: () => "sum",
+
+    count: () => "count",
+
+    aggregate_field: ($) => choice($.avg, $.count, $.sum),
 
     max: () => "max",
 
@@ -318,10 +320,26 @@ module.exports = grammar({
 
     last: () => "last",
 
-    aggregate_field: ($) => choice($.count, $.avg, $.sum, $.max, $.min, $.last),
+    sum_if: () => "sumif",
+
+    count_if: () => "countif",
 
     aggregate_function: ($) =>
-      seq($.aggregate_field, field("aggregate_function_call", "()")),
+      seq(
+        choice(
+          $.avg,
+          $.count_if,
+          $.count,
+          $.last,
+          $.max,
+          $.min,
+          $.sum_if,
+          $.sum
+        ),
+        "(",
+        optional($.comparison),
+        ")"
+      ),
 
     aggregate: ($) => choice($.aggregate_field, $.aggregate_function),
 
@@ -329,6 +347,6 @@ module.exports = grammar({
     // https://docs.nexthink.com/platform/latest/nql-aggregates
     // Group "by" field
     // Window "by" time
-    by: ($) => "by",
+    by: () => "by",
   },
 });

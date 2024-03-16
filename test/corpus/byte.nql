@@ -28,35 +28,40 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (byte)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (byte))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (byte)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (byte))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (byte)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (byte))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (byte)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (byte))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (byte)))))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (byte))))))

@@ -394,428 +394,8 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "REPEAT",
-                  "content": {
-                    "type": "SEQ",
-                    "members": [
-                      {
-                        "type": "SEQ",
-                        "members": [
-                          {
-                            "type": "SYMBOL",
-                            "name": "field"
-                          },
-                          {
-                            "type": "CHOICE",
-                            "members": [
-                              {
-                                "type": "SYMBOL",
-                                "name": "equals"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "not_equals"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "greater_than"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "greater_than_or_equals"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "less_than"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "less_than_or_equals"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "in_array"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "not_in_array"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "CHOICE",
-                            "members": [
-                              {
-                                "type": "CHOICE",
-                                "members": [
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "string"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "int"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "float"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "boolean"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "byte"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "ip_address"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "version"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "enum"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "duration"
-                                  }
-                                ]
-                              },
-                              {
-                                "type": "SEQ",
-                                "members": [
-                                  {
-                                    "type": "STRING",
-                                    "value": "["
-                                  },
-                                  {
-                                    "type": "REPEAT",
-                                    "content": {
-                                      "type": "SEQ",
-                                      "members": [
-                                        {
-                                          "type": "CHOICE",
-                                          "members": [
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "string"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "int"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "float"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "boolean"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "byte"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "ip_address"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "version"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "enum"
-                                            },
-                                            {
-                                              "type": "SYMBOL",
-                                              "name": "duration"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "type": "STRING",
-                                          "value": ","
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  {
-                                    "type": "CHOICE",
-                                    "members": [
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "string"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "int"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "float"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "boolean"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "byte"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "ip_address"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "version"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "enum"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "duration"
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "STRING",
-                                    "value": "]"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "CHOICE",
-                        "members": [
-                          {
-                            "type": "SYMBOL",
-                            "name": "and"
-                          },
-                          {
-                            "type": "SYMBOL",
-                            "name": "or"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "type": "SEQ",
-                  "members": [
-                    {
-                      "type": "SYMBOL",
-                      "name": "field"
-                    },
-                    {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "equals"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "not_equals"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "greater_than"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "greater_than_or_equals"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "less_than"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "less_than_or_equals"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "in_array"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "not_in_array"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "SYMBOL",
-                              "name": "string"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "int"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "float"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "boolean"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "byte"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "ip_address"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "version"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "enum"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "duration"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "SEQ",
-                          "members": [
-                            {
-                              "type": "STRING",
-                              "value": "["
-                            },
-                            {
-                              "type": "REPEAT",
-                              "content": {
-                                "type": "SEQ",
-                                "members": [
-                                  {
-                                    "type": "CHOICE",
-                                    "members": [
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "string"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "int"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "float"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "boolean"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "byte"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "ip_address"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "version"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "enum"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "duration"
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "STRING",
-                                    "value": ","
-                                  }
-                                ]
-                              }
-                            },
-                            {
-                              "type": "CHOICE",
-                              "members": [
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "string"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "int"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "float"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "boolean"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "byte"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "ip_address"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "version"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "enum"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "duration"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "STRING",
-                              "value": "]"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "comparison"
             },
             {
               "type": "SEQ",
@@ -825,376 +405,127 @@
                   "value": "("
                 },
                 {
-                  "type": "SEQ",
-                  "members": [
-                    {
-                      "type": "REPEAT",
-                      "content": {
+                  "type": "SYMBOL",
+                  "name": "comparison"
+                },
+                {
+                  "type": "STRING",
+                  "value": ")"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "field"
+                  },
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "SYMBOL",
+                        "name": "equals"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "not_equals"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "greater_than"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "greater_than_or_equals"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "less_than"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "less_than_or_equals"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "in_array"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "not_in_array"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "CHOICE",
+                        "members": [
+                          {
+                            "type": "SYMBOL",
+                            "name": "string"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "int"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "float"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "boolean"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "byte"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "ip_address"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "version"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "enum"
+                          },
+                          {
+                            "type": "SYMBOL",
+                            "name": "duration"
+                          }
+                        ]
+                      },
+                      {
                         "type": "SEQ",
                         "members": [
                           {
-                            "type": "SEQ",
-                            "members": [
-                              {
-                                "type": "SYMBOL",
-                                "name": "field"
-                              },
-                              {
-                                "type": "CHOICE",
-                                "members": [
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "equals"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "not_equals"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "greater_than"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "greater_than_or_equals"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "less_than"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "less_than_or_equals"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "in_array"
-                                  },
-                                  {
-                                    "type": "SYMBOL",
-                                    "name": "not_in_array"
-                                  }
-                                ]
-                              },
-                              {
-                                "type": "CHOICE",
-                                "members": [
-                                  {
-                                    "type": "CHOICE",
-                                    "members": [
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "string"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "int"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "float"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "boolean"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "byte"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "ip_address"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "version"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "enum"
-                                      },
-                                      {
-                                        "type": "SYMBOL",
-                                        "name": "duration"
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "SEQ",
-                                    "members": [
-                                      {
-                                        "type": "STRING",
-                                        "value": "["
-                                      },
-                                      {
-                                        "type": "REPEAT",
-                                        "content": {
-                                          "type": "SEQ",
-                                          "members": [
-                                            {
-                                              "type": "CHOICE",
-                                              "members": [
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "string"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "int"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "float"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "boolean"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "byte"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "ip_address"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "version"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "enum"
-                                                },
-                                                {
-                                                  "type": "SYMBOL",
-                                                  "name": "duration"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "type": "STRING",
-                                              "value": ","
-                                            }
-                                          ]
-                                        }
-                                      },
-                                      {
-                                        "type": "CHOICE",
-                                        "members": [
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "string"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "int"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "float"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "boolean"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "byte"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "ip_address"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "version"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "enum"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "duration"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "STRING",
-                                        "value": "]"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
+                            "type": "STRING",
+                            "value": "["
                           },
                           {
-                            "type": "CHOICE",
-                            "members": [
-                              {
-                                "type": "SYMBOL",
-                                "name": "and"
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "or"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "type": "SEQ",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "field"
-                        },
-                        {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "SYMBOL",
-                              "name": "equals"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "not_equals"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "greater_than"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "greater_than_or_equals"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "less_than"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "less_than_or_equals"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "in_array"
-                            },
-                            {
-                              "type": "SYMBOL",
-                              "name": "not_in_array"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "CHOICE",
-                              "members": [
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "string"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "int"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "float"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "boolean"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "byte"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "ip_address"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "version"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "enum"
-                                },
-                                {
-                                  "type": "SYMBOL",
-                                  "name": "duration"
-                                }
-                              ]
-                            },
-                            {
+                            "type": "REPEAT",
+                            "content": {
                               "type": "SEQ",
                               "members": [
-                                {
-                                  "type": "STRING",
-                                  "value": "["
-                                },
-                                {
-                                  "type": "REPEAT",
-                                  "content": {
-                                    "type": "SEQ",
-                                    "members": [
-                                      {
-                                        "type": "CHOICE",
-                                        "members": [
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "string"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "int"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "float"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "boolean"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "byte"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "ip_address"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "version"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "enum"
-                                          },
-                                          {
-                                            "type": "SYMBOL",
-                                            "name": "duration"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "STRING",
-                                        "value": ","
-                                      }
-                                    ]
-                                  }
-                                },
                                 {
                                   "type": "CHOICE",
                                   "members": [
@@ -1238,19 +569,272 @@
                                 },
                                 {
                                   "type": "STRING",
-                                  "value": "]"
+                                  "value": ","
                                 }
                               ]
                             }
-                          ]
-                        }
-                      ]
+                          },
+                          {
+                            "type": "CHOICE",
+                            "members": [
+                              {
+                                "type": "SYMBOL",
+                                "name": "string"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "int"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "float"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "boolean"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "byte"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "ip_address"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "version"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "enum"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "duration"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "STRING",
+                            "value": "]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "and"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "or"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "field"
+            },
+            {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "equals"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "not_equals"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "greater_than"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "greater_than_or_equals"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "less_than"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "less_than_or_equals"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "in_array"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "not_in_array"
+                }
+              ]
+            },
+            {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "SYMBOL",
+                      "name": "string"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "int"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "float"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "boolean"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "byte"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "ip_address"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "version"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "enum"
+                    },
+                    {
+                      "type": "SYMBOL",
+                      "name": "duration"
                     }
                   ]
                 },
                 {
-                  "type": "STRING",
-                  "value": ")"
+                  "type": "SEQ",
+                  "members": [
+                    {
+                      "type": "STRING",
+                      "value": "["
+                    },
+                    {
+                      "type": "REPEAT",
+                      "content": {
+                        "type": "SEQ",
+                        "members": [
+                          {
+                            "type": "CHOICE",
+                            "members": [
+                              {
+                                "type": "SYMBOL",
+                                "name": "string"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "int"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "float"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "boolean"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "byte"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "ip_address"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "version"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "enum"
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "duration"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "STRING",
+                            "value": ","
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "CHOICE",
+                      "members": [
+                        {
+                          "type": "SYMBOL",
+                          "name": "string"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "int"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "float"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "boolean"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "byte"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "ip_address"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "version"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "enum"
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "]"
+                    }
+                  ]
                 }
               ]
             }
@@ -1939,10 +1523,6 @@
       "type": "STRING",
       "value": "or"
     },
-    "count": {
-      "type": "STRING",
-      "value": "count"
-    },
     "avg": {
       "type": "STRING",
       "value": "avg"
@@ -1950,6 +1530,27 @@
     "sum": {
       "type": "STRING",
       "value": "sum"
+    },
+    "count": {
+      "type": "STRING",
+      "value": "count"
+    },
+    "aggregate_field": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "avg"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "count"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sum"
+        }
+      ]
     },
     "max": {
       "type": "STRING",
@@ -1963,49 +1564,73 @@
       "type": "STRING",
       "value": "last"
     },
-    "aggregate_field": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "count"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "avg"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "sum"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "max"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "min"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "last"
-        }
-      ]
+    "sum_if": {
+      "type": "STRING",
+      "value": "sumif"
+    },
+    "count_if": {
+      "type": "STRING",
+      "value": "countif"
     },
     "aggregate_function": {
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "aggregate_field"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "avg"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "count_if"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "count"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "last"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "max"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "min"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "sum_if"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "sum"
+            }
+          ]
         },
         {
-          "type": "FIELD",
-          "name": "aggregate_function_call",
-          "content": {
-            "type": "STRING",
-            "value": "()"
-          }
+          "type": "STRING",
+          "value": "("
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "comparison"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": ")"
         }
       ]
     },

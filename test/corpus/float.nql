@@ -16,7 +16,8 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (float)))))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (float))))))

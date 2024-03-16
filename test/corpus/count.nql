@@ -25,8 +25,7 @@ devices
                 (field_property)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (count))))))
+                    (count)))))
             (field_name)
             (alias)
             (expression
@@ -34,5 +33,4 @@ devices
                 (field_name)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (count))))))))))
+                    (count)))))))))

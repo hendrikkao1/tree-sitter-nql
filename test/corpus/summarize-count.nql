@@ -9,7 +9,7 @@ devices
 
 ---
 
-(source_file
+ (source_file
       (query
         (select_clause
           (table))
@@ -20,5 +20,4 @@ devices
             (alias)
             (expression
               (aggregate_function
-                (aggregate_field
-                  (count))))))))
+                (count)))))))

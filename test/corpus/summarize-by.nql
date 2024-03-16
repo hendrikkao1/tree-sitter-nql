@@ -26,8 +26,7 @@ devices
                 (field_property)
                 (aggregate
                   (aggregate_function
-                    (aggregate_field
-                      (avg))))))
+                    (avg)))))
             (by)
             (field
               (field_name)

@@ -31,42 +31,48 @@ devices
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))
         (clause
           (pipe)
           (where_clause
-            (field
-              (field_name))
-            (equals)
-            (version)))))
+            (comparison
+              (field
+                (field_name))
+              (equals)
+              (version))))))

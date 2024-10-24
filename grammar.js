@@ -153,7 +153,7 @@ module.exports = grammar({
 
     field_name: ($) => /[A-z]+[A-z0-9_]*/,
 
-    field_property: ($) => /[A-z]+/,
+    field_property: ($) => /[A-z#]+/,
 
     sort_order: ($) => choice("asc", "desc"),
 

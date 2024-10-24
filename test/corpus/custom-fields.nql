@@ -1,0 +1,51 @@
+==================
+custom fields
+==================
+
+devices
+
+| where
+  device.#custom_field == 1
+
+| summarize
+  c1 = device.#custom_field.count()
+
+| list
+  c1,
+  device.#custom_field
+
+---
+
+(source_file
+      (query
+        (select_clause
+          (table))
+        (clause
+          (pipe)
+          (where_clause
+            (comparison
+              (field
+                (field_name)
+                (field_property))
+              (equals)
+              (int))))
+        (clause
+          (pipe)
+          (summarize_clause
+            (field_name)
+            (alias)
+            (expression
+              (field
+                (field_name)
+                (field_property)
+                (aggregate
+                  (aggregate_function
+                    (count)))))))
+        (clause
+          (pipe)
+          (list_clause
+            (field
+              (field_name))
+            (field
+              (field_name)
+              (field_property))))))

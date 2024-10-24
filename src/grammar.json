@@ -1152,7 +1152,7 @@
     },
     "field_property": {
       "type": "PATTERN",
-      "value": "[A-z]+"
+      "value": "[A-z#]+"
     },
     "sort_order": {
       "type": "CHOICE",
